@@ -6,9 +6,10 @@
     <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script> 
     <link rel="stylesheet" href="css/stylesheet.css">
+
 <body>
-<div style="background-color: #1B0C54;">
-<div class="index-head" style="margin-bottom: 5px;">
+<div style="background-color: #1B0C54;" id="main">
+<div class="index-head" style="margin-bottom:5px;">
     <div class="logo">
         <img src="images/logo.jpg" style="width:200px; height:200px;" alt="Logo"/>
     </div>
@@ -17,36 +18,32 @@
         <span class="name-petrichor">Petrichor<br/></span><p>The annual Techno-Cultural Fest of IIT Palakkad</p>
     </div>
 </div>
-    <nav class="navbar" id="nav-background">
-            <div class="container">
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="navbar-right nav navbar-nav">
-                        <li><a href="culture.html" style="color:gold;"><span class="glyphicon glyphicon-film"></span> Cultural</a></li>
-                        <li><a href="tech.html" style="color:gold;"><span class="glyphicon glyphicon-cog"></span> Tech</a></li>
-                        <li><a href="literary.html" style="color:gold;"><span class="glyphicon glyphicon-pencil"></span> Literary</a></li>
-                        <li><a href="info.html" style="color:gold;"><span class="glyphicon glyphicon-info-sign"></span> Information</a></li>
-                        <li><a href="aboutus.html" style="color:gold;"><span class="glyphicon glyphicon-user"></span> About Us</a></li>
-                        <li><a href="contactus.html" style="color:gold;"><span class="glyphicon glyphicon-phone"></span> Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>  
-        </nav>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="culture.html" style="color:gold;"><span class="glyphicon glyphicon-film"></span> Cultural</a>
+    <a href="tech.html" style="color:gold;"><span class="glyphicon glyphicon-cog"></span> Tech</a>
+    <a href="literary.html" style="color:gold;"><span class="glyphicon glyphicon-pencil"></span> Literary</a>
+    <a href="info.html" style="color:gold;"><span class="glyphicon glyphicon-info-sign"></span> Information</a>
+    <a href="aboutus.html" style="color:gold;"><span class="glyphicon glyphicon-user"></span> About Us</a>
+    <a href="contactus.html" style="color:gold;"><span class="glyphicon glyphicon-phone"></span> Contact Us</a>
+</div>
+	<span style="font-size:30px;cursor:pointer;color:gold;margin-left:470px;" onclick="openNav()">Menu &#9776;</span>
 </div> <!--Slideshow  -->
-<div class="slideshow-container" style="background:url(images/back_grd1.png) center no-repeat">
+<div class="slideshow-container" style="background:url(images/back_grd1.png) center no-repeat; margin-top:5px;" id="main">
 
-<div class="mySlides fade">
+<div class="mySlides fade"id="main">
   <div class="numbertext">1 / 3</div>
   <img src="images/destroyer.png" style="width:100%;height:600px;" alt="image1">
   <div class="text">Image 1</div>
 </div>
 
-<div class="mySlides fade">
+<div class="mySlides fade"id="main">
   <div class="numbertext">2 / 3</div>
   <img src="images/base.png" style="width:100%;height:600px;" alt="image2">
   <div class="text">Image 2</div>
 </div>
 
-<div class="mySlides fade">
+<div class="mySlides fade"id="main">
   <div class="numbertext">3 / 3</div>
   <img src="images/city.jpg" style="width:100%;height:600px;" alt="image3">
   <div class="text">Image 3</div>
@@ -55,13 +52,20 @@
 </div>
 <br>
 
-<div style="text-align:center">
+<div style="text-align:center"id="main">
   <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
 </div>
 
 <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 var slideIndex = 0;
 showSlides();
 
@@ -83,7 +87,7 @@ function showSlides() {
 }
 </script>
 <footer>
-<div class="container-fluid" style="background-color: #1B0C54;padding-top: 20px;">
+<div class="container-fluid" style="background-color: #1B0C54;padding-top: 20px;"id="main">
 	<ul style="list-style-type:none;overflow: auto;">
             <li class="links"><a href="index.html" class="footer-nav-index"><p class="footer_para">Home</p></a></li>
             <li class="links"><a href="aboutus.html" class="footer-nav-index"><p class="footer_para">About Us </p></a></li>
