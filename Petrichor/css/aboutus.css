@@ -1,0 +1,23 @@
+/*
+About Us page CSS file
+*/
+
+#nav-background
+{
+    background-color: #1B0C54;
+}
+
+.nav_text
+{
+    color: gold;
+}
+
+footer
+{
+    padding: 10px 0;
+    background-color: #1B0C54;
+    color:gold;
+    bottom: 0;
+    width: 100%;
+}
+
